@@ -426,6 +426,11 @@ define-properties@^1.1.3:
   dependencies:
     object-keys "^1.0.12"
 
+delay@^5.0.0:
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/delay/-/delay-5.0.0.tgz#137045ef1b96e5071060dd5be60bf9334436bd1d"
+  integrity sha512-ReEBKkIfe4ya47wlPYf/gu5ib6yUG0/Aez0JQZQz94kiWtRQvZIQbTiehsnwHvLSWJnQdhVeqYue7Id1dKr0qw==
+
 dir-glob@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/dir-glob/-/dir-glob-3.0.1.tgz#56dbf73d992a4a93ba1584f4534063fd2e41717f"
@@ -1161,7 +1166,7 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-next@12.0.10:
+next@^12.0.10:
   version "12.0.10"
   resolved "https://registry.yarnpkg.com/next/-/next-12.0.10.tgz#fcc4584177418bd777ce157f3165b7ba5e7708f7"
   integrity sha512-1y3PpGzpb/EZzz1jgne+JfZXKAVJUjYXwxzrADf/LWN+8yi9o79vMLXpW3mevvCHkEF2sBnIdjzNn16TJrINUw==
@@ -1357,24 +1362,24 @@ queue-microtask@^1.2.2:
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
 
-react-dom@^18.0.0-rc.0-next-27b569969-20220211:
-  version "18.0.0-rc.0-next-27b569969-20220211"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-rc.0-next-27b569969-20220211.tgz#e6dc6c415f1c06c269a62ebb19e1de12e2222074"
-  integrity sha512-XQ59fgrMbT7MQhGr47nzVyeFk2aid+9j4HxRI0h8igaDlj7TJIGiOVbHMRjEjtnKjOkMqa94V0tclrDMEGcSUg==
+react-dom@^18.0.0-rc.0:
+  version "18.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-18.0.0-rc.0.tgz#aa07044bdd6399ff94c664b2985e2e25948fbf3e"
+  integrity sha512-tdD1n0svTndHBQvVAq/f2Kx7FgQ30CpSLp87/neQKAHPW5WtdgW1sBSwmFAcMQOrmstTuP0M+zRlH86f9kMX/A==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
-    scheduler "0.21.0-rc.0-next-27b569969-20220211"
+    scheduler "^0.21.0-rc.0"
 
 react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react@^18.0.0-rc.0-next-27b569969-20220211:
-  version "18.0.0-rc.0-next-27b569969-20220211"
-  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-rc.0-next-27b569969-20220211.tgz#fbd7c74fc155e880dc16c8c7910bdafdcaa2a80f"
-  integrity sha512-sD//cuEVCF38jbmq9idcKlpyi0UgqiIicw0VXCc+fQIln/YwBpmfaAI6CONGF5yZETLau4NXHJV8rnP7tbJ7ow==
+react@^18.0.0-rc.0:
+  version "18.0.0-rc.0"
+  resolved "https://registry.yarnpkg.com/react/-/react-18.0.0-rc.0.tgz#60bfcf1edd0b35fbeeeca852515c6cc2ce06a6eb"
+  integrity sha512-PawosMBgF8k5Nlc3++ibzjFqPvo1XKv80MNtVYqz3abHHB2w3IpU65sSdSmBd2ooCwVhcp9b1vkx/twqhakNtA==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
@@ -1438,10 +1443,10 @@ run-parallel@^1.1.9:
   dependencies:
     queue-microtask "^1.2.2"
 
-scheduler@0.21.0-rc.0-next-27b569969-20220211:
-  version "0.21.0-rc.0-next-27b569969-20220211"
-  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-rc.0-next-27b569969-20220211.tgz#95aec8f43877f0ebcbb3ceba4e4d76b528861a82"
-  integrity sha512-tY6JYa+HRtqpsJ5CWHHRosLO3ZupuiZucQGlZdMIQgB4g9/qRvJA4NR7458YNmlX2cfVah0LcynfgbbKJE/aaQ==
+scheduler@^0.21.0-rc.0:
+  version "0.21.0-rc.0-next-fe905f152-20220107"
+  resolved "https://registry.yarnpkg.com/scheduler/-/scheduler-0.21.0-rc.0-next-fe905f152-20220107.tgz#410f6df2f39d5543b00f98fbad7de6c9b374df89"
+  integrity sha512-+sY0WajWdMjoxbmHM8P6P1FKGw8sSVKKG/HthqTFQFPxVGbKLmV1BiFPaVF9gOyQWqmnLYSXJMN+4Bs5ZygsTw==
   dependencies:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
